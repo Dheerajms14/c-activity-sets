@@ -24,7 +24,7 @@ int compare(int a ,int b,int c){
 }
 
 void output(int a, int b, int c, int lar ){
-    printf("the sum %d and  %d is %d",a,b,c);
+    printf("the sum %d %d %d is %d",a,b,c,lar);
 }
 
 int main(){

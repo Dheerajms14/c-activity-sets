@@ -33,7 +33,7 @@ int main()
     a=input();
     b=input();
     c=input();
-    campare(a,b,c,&largest);
+    compare(a,b,c,&largest);
     output(a,b,c,&largest);
     return 0;
 }
