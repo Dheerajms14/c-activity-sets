@@ -28,12 +28,12 @@ void output(int a, int b, int c, int lar ){
 }
 
 int main(){
-    int num1,num2,num3,lar;
-    num1=input();
-    num2=intput();
-    num3=input();
-    lar=compare(num1,num2,num3);
-    output(num1,num2,num3,lar);
+    int a,b,c,lar;
+    a=input();
+    b=input();
+    c=input();
+    lar=compare(a,b,c);
+    output(a,b,c,lar);
     return 0;
 
 }
