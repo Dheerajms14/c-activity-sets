@@ -2,7 +2,7 @@
 
 int input(int *a,int *b)
 {
-    printf("Enter the two number");
+    printf("Enter the two number\n");
     scanf("%d%d",&a,&b);
 
 }
