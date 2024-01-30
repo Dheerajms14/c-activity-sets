@@ -33,7 +33,7 @@ int main() {
     printf("Enter the second complex number:\n");
     complex2 = input_complex();
     
-    sum = add_complex(complex, complex2);
+    sum = add_complex(complex1, complex2);
     
     output(complex1, complex2, sum);
 
