@@ -1,0 +1,9 @@
+gcc -g -O0 problem06.c -o problem06.exe
+problem06.c: In function 'main':
+problem06.c:36:5: warning: implicit declaration of function 'campare' [-Wimplicit-function-declaration]
+     campare(a,b,c,&largest);
+     ^~~~~~~
+C:\Users\Dheeraj\AppData\Local\Temp\cc43sDJ0.o: In function `main':
+C:\Users\Dheeraj\Psc\c-activity-sets\set01/problem06.c:36: undefined reference to `campare'
+collect2.exe: error: ld returned 1 exit status
+PS C:\Users\Dheeraj\Psc\c-activity-sets\set01> gcc -g -O0 problem06.c -o problem06.exe

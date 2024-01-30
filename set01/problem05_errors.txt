@@ -1,0 +1,9 @@
+gcc -g -O0 problem05.c -o problem05.exe
+problem05.c: In function 'main':
+problem05.c:33:10: warning: implicit declaration of function 'intput' [-Wimplicit-function-declaration]
+     num2=intput();
+          ^~~~~~
+C:\Users\Dheeraj\AppData\Local\Temp\ccu59WhZ.o: In function `main':
+C:\Users\Dheeraj\Psc\c-activity-sets\set01/problem05.c:33: undefined reference to `intput'
+collect2.exe: error: ld returned 1 exit status
+PS C:\Users\Dheeraj\Psc\c-activity-sets\set01> gcc -g -O0 problem05.c -o problem05.exe

@@ -1,0 +1,105 @@
+ gdb ./problem07.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\Dheeraj\Psc\c-activity-sets\set01\problem07.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x4014e8: file problem07.c, line 23.
+(gdb) r
+Starting program: C:\Users\Dheeraj\Psc\c-activity-sets\set01/./problem07.exe
+[New Thread 20848.0x365c]
+[New Thread 20848.0x3900]
+
+Breakpoint 1, main () at problem07.c:23
+23          n=input_n();
+(gdb) n
+Enter the positive integer7
+24          sum= sum_n_nos(n);
+(gdb) c
+Continuing.
+the sum of all natural num from 1 to 7 is 28
+[Inferior 1 (process 20848) exited normally]
+(gdb)
+The program is not being run.
+(gdb) r
+Starting program: C:\Users\Dheeraj\Psc\c-activity-sets\set01/./problem07.exe
+[New Thread 1008.0x20d8]
+[New Thread 1008.0x39a4]
+
+Breakpoint 1, main () at problem07.c:23
+23          n=input_n();
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 1008] will be killed.
+
+Quit anyway? (y or n) n
+Not confirmed.
+(gdb) b input_n
+Breakpoint 2 at 0x401466: file problem07.c, line 4.
+(gdb) n
+
+Breakpoint 2, input_n () at problem07.c:4
+4           printf("Enter the positive integer");
+(gdb) r
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
+Starting program: C:\Users\Dheeraj\Psc\c-activity-sets\set01/./problem07.exe
+[New Thread 20276.0x17e0]
+[New Thread 20276.0x3350]
+
+Breakpoint 1, main () at problem07.c:23
+23          n=input_n();
+(gdb) l 
+18          printf("the sum of all natural num from 1 to %d is %d\n",n,sum);
+19      }
+20
+21      int main(){
+22          int n,sum;
+23          n=input_n();
+24          sum= sum_n_nos(n);
+25          output(n,sum);
+26          return 0;
+27      }(gdb) s
+
+Breakpoint 2, input_n () at problem07.c:4
+4           printf("Enter the positive integer");
+(gdb)
+Enter the positive integer5         scanf("%d",&num);
+(gdb)
+
+p
+6           return num;
+(gdb) b main
+Note: breakpoint 1 also set at pc 0x4014e8.
+Breakpoint 3 at 0x4014e8: file problem07.c, line 23.
+(gdb) r
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
+Starting program: C:\Users\Dheeraj\Psc\c-activity-sets\set01/./problem07.exe 
+[New Thread 4980.0x47d0]
+[New Thread 4980.0x5fc]
+
+Breakpoint 1, main () at problem07.c:23
+23          n=input_n();
+(gdb) n
+
+Breakpoint 2, input_n () at problem07.c:4
+4           printf("Enter the positive integer");
+(gdb) n
+Enter the positive integer5         scanf("%d",&num);
+(gdb) c
+Continuing.
+
+q
+the sum of all natural num from 1 to 6422476 is -330758866
+[Inferior 1 (process 4980) exited normally]
+(gdb) q

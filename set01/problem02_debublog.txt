@@ -1,0 +1,81 @@
+ gdb ./problem01.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\Dheeraj\Psc\c-activity-sets\set01\problem01.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem01.c, line 4.
+(gdb) r
+Starting program: C:\Users\Dheeraj\Psc\c-activity-sets\set01/./problem01.exe
+[New Thread 5428.0x3914]
+[New Thread 5428.0x495c]
+
+Breakpoint 1, main () at problem01.c:4
+4           printf("Dheeraj");
+(gdb) n
+Dheeraj5            return 0;
+(gdb) c
+Continuing.
+[Inferior 1 (process 5428) exited normally]
+(gdb) q
+PS C:\Users\Dheeraj\Psc\c-activity-sets\set01> git push
+Enumerating objects: 19, done.
+Counting objects: 100% (18/18), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 2.46 KiB | 2.46 MiB/s, done.
+Total 12 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Dheerajms14/c-activity-sets.git
+   a9a1fe2..61aa78a  main -> main
+PS C:\Users\Dheeraj\Psc\c-activity-sets\set01> git commit -m "test"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        problem02-errors.txt
+        problem02_debublog.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Dheeraj\Psc\c-activity-sets\set01> git add .
+PS C:\Users\Dheeraj\Psc\c-activity-sets\set01> git commit -m "test"
+[main 4f40903] test
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 set01/problem02-errors.txt
+ create mode 100644 set01/problem02_debublog.txt
+PS C:\Users\Dheeraj\Psc\c-activity-sets\set01> gcc -g -O0 problem02.c -o problem02.exe
+PS C:\Users\Dheeraj\Psc\c-activity-sets\set01> gdb ./problem02.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\Dheeraj\Psc\c-activity-sets\set01\problem02.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem02.c, line 5.
+(gdb) r
+Starting program: C:\Users\Dheeraj\Psc\c-activity-sets\set01/./problem02.exe
+[New Thread 12844.0x2300]
+[New Thread 12844.0x3fa0]
+
+Breakpoint 1, main () at problem02.c:5
+5           printf("Enter the two numbers");
+(gdb) n
+Enter the two numbers6      scanf("%d,%d",&a,&b);
+(gdb) c
+Continuing.
+
+q
+The sum of two numbers is 0+12129648 is 12129648[Inferior 1 (process 12844) exited normally]
+(gdb)
