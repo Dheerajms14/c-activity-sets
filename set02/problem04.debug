@@ -1,0 +1,27 @@
+gdb ./problem04.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\Dheeraj\OneDrive\Desktop\psc activities\c-activity-sets\set02\problem04.exe...done.
+(gdb) b output
+Breakpoint 1 at 0x401622: file problem04.c, line 62.
+(gdb) r
+Starting program: C:\Users\Dheeraj\OneDrive\Desktop\psc activities\c-activity-sets\set02/./problem04.exe
+[New Thread 2192.0x6d84]
+[New Thread 2192.0x74f0]
+Enter the size of the array: 5
+Enter the elements of the array: 1 2 7 8 12
+
+Breakpoint 1, output (sum=20) at problem04.c:62
+62          printf("Sum of composite numbers: %d\n", sum);
+(gdb) c
+Continuing.
+Sum of composite numbers: 20
+[Inferior 1 (process 2192) exited normally]
+(gdb)

@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+int input_array_size();
+void input_array(int n, int a[n]);
+int sum_composite_numbers(int n, int a[n]);
+void output(int sum);
+
 int main() {
     int n = input_array_size();
     int array[n];
@@ -38,7 +43,7 @@ int is_composite(int num) {
         }
     }
     
-    return 0;
+    return 0; 
 }
 
 int sum_composite_numbers(int n, int a[n]) {
