@@ -1,0 +1,42 @@
+gdb ./problem03.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\Dheeraj\OneDrive\Desktop\psc activities\c-activity-sets\set02\problem03.exe...done.
+(gdb) b output
+Breakpoint 1 at 0x401511: file problem03.c, line 39.
+(gdb) r
+Starting program: C:\Users\Dheeraj\OneDrive\Desktop\psc activities\c-activity-sets\set02/./problem03.exe 
+[New Thread 25736.0x7490]
+[New Thread 25736.0x47ac]
+Enter a number: 8
+
+Breakpoint 1, output (n=8, result=1) at problem03.c:39
+39          if (result) {
+(gdb) n
+40              printf("%d is a composite number\n", n);
+(gdb) n
+8 is a composite number
+44      }
+(gdb) r
+The program being debugged has been started already.
+Start it from the beginning? (y or n) Y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
+Starting program: C:\Users\Dheeraj\OneDrive\Desktop\psc activities\c-activity-sets\set02/./problem03.exe 
+[New Thread 11336.0x9f8]
+[New Thread 11336.0x755c]
+Enter a number: 7
+
+Breakpoint 1, output (n=7, result=0) at problem03.c:39
+39          if (result) {
+(gdb) C
+Continuing.
+7 is not a composite number
+[Inferior 1 (process 11336) exited normally]
+(gdb) 
